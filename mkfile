@@ -18,15 +18,9 @@ install:V:
 	mk -f mkfile.pcretest $target
 	for (i in $DIRS)
 		@{ cd $i; mk $target }
-	mv $O.pcregrep /$objtype/bin/pcregrep
-	mv $O.out /$objtype/bin/pcretest
-	mv libpcre.a$O /$objtype/lib/ape/libpcre.a
-	mv libpcreposix.a$O /$objtype/lib/ape/libpcreposix.a
 	mkdir -p /$objtype/lib/ape/pkgconfig
 	cp pcre.pc  /$objtype/lib/ape/pkgconfig/
 	cp pcreposix.pc  /$objtype/lib/ape/pkgconfig/
-	cp pcre.h.ape /sys/include/ape/pcre.h
-	cp pcreposix.h.ape /sys/include/ape/pcreposix.h
 	chmod +x pcre-config
 	cp pcre-config /rc/bin/ape
 
@@ -47,11 +41,7 @@ nuke:V:
 	mk -f mkfile.pcretest $target
 	for (i in $DIRS)
 		@{ cd $i; mk $target }
-	rm -f /$objtype/bin/pcregrep
-	rm -f /$objtype/bin/pcretest
-	rm -f /$objtype/lib/ape/libpcre.a
-	rm -f /$objtype/lib/ape/libpcreposix.a
-	rm -f /sys/include/ape/pcre.h
-	rm -f /sys/include/ape/pcreposix.h
+	rm -f /$objtype/lib/ape/pkgconfig/pcre.pc
+	rm -f /$objtype/lib/ape/pkgconfig/pcreposix.pc
 	rm -f /rc/bin/ape/pcre-config
 

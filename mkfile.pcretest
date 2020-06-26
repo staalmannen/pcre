@@ -1,7 +1,7 @@
 </$objtype/mkfile
 TARG=pcretest
 OFILES=pcretest.$O pcre_tables.$O pcre_ucd.$O 
-LIB=./libpcre.a8 ./libpcreposix.a8 
+LIB=./libpcre.a ./libpcreposix.a 
 BIN=/$objtype/bin
 
 </sys/src/cmd/mkone
