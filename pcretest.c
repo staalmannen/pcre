@@ -5,7 +5,7 @@
 /* This program was hacked up as a tester for PCRE. I really should have
 written it more tidily in the first place. Will I ever learn? It has grown and
 been extended and consequently is now rather, er, *very* untidy in places. The
-addition of 16-bit support has made it even worse. :-(
+addition of 16-bit support has made it even worse. :-( rlimi
 
 -----------------------------------------------------------------------------
 Redistribution and use in source and binary forms, with or without
@@ -3168,7 +3168,7 @@ while (argc > 1 && argv[op][0] == '-')
       ((stack_size = get_value((pcre_uint8 *)argv[op+1], &endptr)),
         *endptr == 0))
     {
-#if defined(_WIN32) || defined(WIN32) || defined(__minix) || defined(NATIVE_ZOS) || defined(__VMS)
+#if defined(_WIN32) || defined(WIN32) || defined(__minix) || defined(NATIVE_ZOS) || defined(__VMS) || defined(PLAN9)
     printf("PCRE: -S not supported on this OS\n");
     exit(1);
 #else

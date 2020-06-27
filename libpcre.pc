@@ -1,7 +1,7 @@
 # Package Information for pkg-config
 
 prefix=/sys
-exec_prefix=${prefix}
+exec_prefix=/386
 libdir=/386/lib/ape
 includedir=/sys/include/ape
 

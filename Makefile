@@ -113,21 +113,21 @@ noinst_PROGRAMS = $(am__EXEEXT_2) $(am__EXEEXT_3) $(am__EXEEXT_4)
 am__append_4 = libpcre.la
 
 # Build the 16 bit library if it is enabled.
-am__append_5 = libpcre16.la
+#am__append_5 = libpcre16.la
 
 # Build the 32 bit library if it is enabled.
-am__append_6 = libpcre32.la
+#am__append_6 = libpcre32.la
 #am__append_7 = $(VALGRIND_CFLAGS)
-#am__append_8 = $(VALGRIND_CFLAGS)
-#am__append_9 = $(VALGRIND_CFLAGS)
+##am__append_8 = $(VALGRIND_CFLAGS)
+##am__append_9 = $(VALGRIND_CFLAGS)
 #am__append_10 = $(GCOV_CFLAGS)
-#am__append_11 = $(GCOV_CFLAGS)
-#am__append_12 = $(GCOV_CFLAGS)
+##am__append_11 = $(GCOV_CFLAGS)
+##am__append_12 = $(GCOV_CFLAGS)
 #am__append_13 = pcre_jit_test
 #am__append_14 = pcre_jit_test
 #am__append_15 = libpcre.la
-#am__append_16 = libpcre16.la
-#am__append_17 = libpcre32.la
+##am__append_16 = libpcre16.la
+##am__append_17 = libpcre32.la
 ##am__append_18 = $(GCOV_CFLAGS)
 ##am__append_19 = $(GCOV_LIBS)
 am__append_20 = libpcreposix.la
@@ -145,10 +145,10 @@ am__append_20 = libpcreposix.la
 ##am__append_28 = $(GCOV_LIBS)
 am__append_29 = pcre_printint.c
 am__append_30 = libpcre.la libpcreposix.la
-am__append_31 = pcre16_printint.c
-am__append_32 = libpcre16.la
-am__append_33 = pcre32_printint.c
-am__append_34 = libpcre32.la
+#am__append_31 = pcre16_printint.c
+#am__append_32 = libpcre16.la
+#am__append_33 = pcre32_printint.c
+#am__append_34 = libpcre32.la
 #am__append_35 = $(VALGRIND_CFLAGS)
 #am__append_36 = $(GCOV_CFLAGS)
 #am__append_37 = $(GCOV_LIBS)
@@ -157,8 +157,8 @@ am__append_39 = RunGrepTest
 am__append_40 = pcregrep
 #am__append_41 = $(GCOV_CFLAGS)
 #am__append_42 = $(GCOV_LIBS)
-am__append_43 = libpcre16.pc
-am__append_44 = libpcre32.pc
+#am__append_43 = libpcre16.pc
+#am__append_44 = libpcre32.pc
 #am__append_45 = libpcrecpp.pc
 subdir = .
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
@@ -272,37 +272,37 @@ am__libpcre16_la_SOURCES_DIST = pcre16_byte_order.c \
 	pcre16_string_utils.c pcre16_study.c pcre16_tables.c \
 	pcre16_ucd.c pcre16_utf16_utils.c pcre16_valid_utf16.c \
 	pcre16_version.c pcre16_xclass.c
-am_libpcre16_la_OBJECTS =  \
-	libpcre16_la-pcre16_byte_order.lo \
-	libpcre16_la-pcre16_chartables.lo \
-	libpcre16_la-pcre16_compile.lo \
-	libpcre16_la-pcre16_config.lo \
-	libpcre16_la-pcre16_dfa_exec.lo \
-	libpcre16_la-pcre16_exec.lo \
-	libpcre16_la-pcre16_fullinfo.lo \
-	libpcre16_la-pcre16_get.lo \
-	libpcre16_la-pcre16_globals.lo \
-	libpcre16_la-pcre16_jit_compile.lo \
-	libpcre16_la-pcre16_maketables.lo \
-	libpcre16_la-pcre16_newline.lo \
-	libpcre16_la-pcre16_ord2utf16.lo \
-	libpcre16_la-pcre16_refcount.lo \
-	libpcre16_la-pcre16_string_utils.lo \
-	libpcre16_la-pcre16_study.lo \
-	libpcre16_la-pcre16_tables.lo \
-	libpcre16_la-pcre16_ucd.lo \
-	libpcre16_la-pcre16_utf16_utils.lo \
-	libpcre16_la-pcre16_valid_utf16.lo \
-	libpcre16_la-pcre16_version.lo \
-	libpcre16_la-pcre16_xclass.lo
-nodist_libpcre16_la_OBJECTS =  \
-	libpcre16_la-pcre_chartables.lo
+#am_libpcre16_la_OBJECTS =  \
+#	libpcre16_la-pcre16_byte_order.lo \
+#	libpcre16_la-pcre16_chartables.lo \
+#	libpcre16_la-pcre16_compile.lo \
+#	libpcre16_la-pcre16_config.lo \
+#	libpcre16_la-pcre16_dfa_exec.lo \
+#	libpcre16_la-pcre16_exec.lo \
+#	libpcre16_la-pcre16_fullinfo.lo \
+#	libpcre16_la-pcre16_get.lo \
+#	libpcre16_la-pcre16_globals.lo \
+#	libpcre16_la-pcre16_jit_compile.lo \
+#	libpcre16_la-pcre16_maketables.lo \
+#	libpcre16_la-pcre16_newline.lo \
+#	libpcre16_la-pcre16_ord2utf16.lo \
+#	libpcre16_la-pcre16_refcount.lo \
+#	libpcre16_la-pcre16_string_utils.lo \
+#	libpcre16_la-pcre16_study.lo \
+#	libpcre16_la-pcre16_tables.lo \
+#	libpcre16_la-pcre16_ucd.lo \
+#	libpcre16_la-pcre16_utf16_utils.lo \
+#	libpcre16_la-pcre16_valid_utf16.lo \
+#	libpcre16_la-pcre16_version.lo \
+#	libpcre16_la-pcre16_xclass.lo
+#nodist_libpcre16_la_OBJECTS =  \
+#	libpcre16_la-pcre_chartables.lo
 libpcre16_la_OBJECTS = $(am_libpcre16_la_OBJECTS) \
 	$(nodist_libpcre16_la_OBJECTS)
 libpcre16_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(libpcre16_la_CFLAGS) \
 	$(CFLAGS) $(libpcre16_la_LDFLAGS) $(LDFLAGS) -o $@
-am_libpcre16_la_rpath = -rpath $(libdir)
+#am_libpcre16_la_rpath = -rpath $(libdir)
 libpcre32_la_DEPENDENCIES =
 am__libpcre32_la_SOURCES_DIST = pcre32_byte_order.c \
 	pcre32_chartables.c pcre32_compile.c pcre32_config.c \
@@ -312,37 +312,37 @@ am__libpcre32_la_SOURCES_DIST = pcre32_byte_order.c \
 	pcre32_string_utils.c pcre32_study.c pcre32_tables.c \
 	pcre32_ucd.c pcre32_utf32_utils.c pcre32_valid_utf32.c \
 	pcre32_version.c pcre32_xclass.c
-am_libpcre32_la_OBJECTS =  \
-	libpcre32_la-pcre32_byte_order.lo \
-	libpcre32_la-pcre32_chartables.lo \
-	libpcre32_la-pcre32_compile.lo \
-	libpcre32_la-pcre32_config.lo \
-	libpcre32_la-pcre32_dfa_exec.lo \
-	libpcre32_la-pcre32_exec.lo \
-	libpcre32_la-pcre32_fullinfo.lo \
-	libpcre32_la-pcre32_get.lo \
-	libpcre32_la-pcre32_globals.lo \
-	libpcre32_la-pcre32_jit_compile.lo \
-	libpcre32_la-pcre32_maketables.lo \
-	libpcre32_la-pcre32_newline.lo \
-	libpcre32_la-pcre32_ord2utf32.lo \
-	libpcre32_la-pcre32_refcount.lo \
-	libpcre32_la-pcre32_string_utils.lo \
-	libpcre32_la-pcre32_study.lo \
-	libpcre32_la-pcre32_tables.lo \
-	libpcre32_la-pcre32_ucd.lo \
-	libpcre32_la-pcre32_utf32_utils.lo \
-	libpcre32_la-pcre32_valid_utf32.lo \
-	libpcre32_la-pcre32_version.lo \
-	libpcre32_la-pcre32_xclass.lo
-nodist_libpcre32_la_OBJECTS =  \
-	libpcre32_la-pcre_chartables.lo
+#am_libpcre32_la_OBJECTS =  \
+#	libpcre32_la-pcre32_byte_order.lo \
+#	libpcre32_la-pcre32_chartables.lo \
+#	libpcre32_la-pcre32_compile.lo \
+#	libpcre32_la-pcre32_config.lo \
+#	libpcre32_la-pcre32_dfa_exec.lo \
+#	libpcre32_la-pcre32_exec.lo \
+#	libpcre32_la-pcre32_fullinfo.lo \
+#	libpcre32_la-pcre32_get.lo \
+#	libpcre32_la-pcre32_globals.lo \
+#	libpcre32_la-pcre32_jit_compile.lo \
+#	libpcre32_la-pcre32_maketables.lo \
+#	libpcre32_la-pcre32_newline.lo \
+#	libpcre32_la-pcre32_ord2utf32.lo \
+#	libpcre32_la-pcre32_refcount.lo \
+#	libpcre32_la-pcre32_string_utils.lo \
+#	libpcre32_la-pcre32_study.lo \
+#	libpcre32_la-pcre32_tables.lo \
+#	libpcre32_la-pcre32_ucd.lo \
+#	libpcre32_la-pcre32_utf32_utils.lo \
+#	libpcre32_la-pcre32_valid_utf32.lo \
+#	libpcre32_la-pcre32_version.lo \
+#	libpcre32_la-pcre32_xclass.lo
+#nodist_libpcre32_la_OBJECTS =  \
+#	libpcre32_la-pcre_chartables.lo
 libpcre32_la_OBJECTS = $(am_libpcre32_la_OBJECTS) \
 	$(nodist_libpcre32_la_OBJECTS)
 libpcre32_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(libpcre32_la_CFLAGS) \
 	$(CFLAGS) $(libpcre32_la_LDFLAGS) $(LDFLAGS) -o $@
-am_libpcre32_la_rpath = -rpath $(libdir)
+#am_libpcre32_la_rpath = -rpath $(libdir)
 #libpcrecpp_la_DEPENDENCIES = libpcre.la
 am__libpcrecpp_la_SOURCES_DIST = pcrecpp_internal.h pcrecpp.cc \
 	pcre_scanner.cc pcre_stringpiece.cc
@@ -429,8 +429,8 @@ pcregrep_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
 am__pcretest_SOURCES_DIST = pcretest.c pcre_printint.c \
 	pcre16_printint.c pcre32_printint.c
 am__objects_1 = pcretest-pcre_printint.$(OBJEXT)
-am__objects_2 = pcretest-pcre16_printint.$(OBJEXT)
-am__objects_3 = pcretest-pcre32_printint.$(OBJEXT)
+#am__objects_2 = pcretest-pcre16_printint.$(OBJEXT)
+#am__objects_3 = pcretest-pcre32_printint.$(OBJEXT)
 am_pcretest_OBJECTS = pcretest-pcretest.$(OBJEXT) $(am__objects_1) \
 	$(am__objects_2) $(am__objects_3)
 pcretest_OBJECTS = $(am_pcretest_OBJECTS)
@@ -842,7 +842,7 @@ AUTOMAKE = ${SHELL} /usr/glenda/src/pcre/missing automake-1.16
 AWK = awk
 CC = cc
 CCDEPMODE = depmode=none
-CFLAGS = -D_BSD_EXTENSION -D_POSIX_SOURCE -D_SUSV2_SOURCE
+CFLAGS = -D_POSIX_SOURCE -D_SUSV2_SOURCE -D_RESEARCH_SOURCE -D_REENTRANT_SOURCE -D_BSD_EXTENSION -D_NET_EXTENSION -D_LIMITS_EXTENSION -D_C99_SNPRINTF_EXTENSION -D_REGEXP_EXTENSION -DHAVE_SOCK_OPTS
 CPP = cc -E
 CPPFLAGS = 
 CXX = 
@@ -944,22 +944,22 @@ am__quote =
 am__tar = $${TAR-tar} chof - "$$tardir"
 am__untar = $${TAR-tar} xf -
 ax_pthread_config = 
-bindir = /386/bin
+bindir = ${exec_prefix}/bin
 build = i386-unknown-plan9
 build_alias = 
 build_cpu = i386
 build_os = plan9
 build_vendor = unknown
 builddir = .
-datadir = ${datarootdir}
-datarootdir = /sys/lib/pcre
-docdir = /sys/doc
+datadir = /sys
+datarootdir = ${prefix}/share
+docdir = ${datarootdir}/doc/${PACKAGE_TARNAME}
 dvidir = ${docdir}
 enable_cpp = no
-enable_pcre16 = yes
-enable_pcre32 = yes
+enable_pcre16 = no
+enable_pcre32 = no
 enable_pcre8 = yes
-exec_prefix = ${prefix}
+exec_prefix = /386
 host = i386-unknown-plan9
 host_alias = 
 host_cpu = i386
@@ -973,7 +973,7 @@ libdir = /386/lib/ape
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
 localstatedir = ${prefix}/var
-mandir = /sys/man
+mandir = ${datarootdir}/man
 mkdir_p = $(MKDIR_P)
 oldincludedir = /usr/include
 pcre_have_bits_type_traits = 0
@@ -1195,71 +1195,71 @@ libpcre_la_LIBADD =
 nodist_libpcre_la_SOURCES = \
   pcre_chartables.c
 
-libpcre16_la_SOURCES = \
-  pcre16_byte_order.c \
-  pcre16_chartables.c \
-  pcre16_compile.c \
-  pcre16_config.c \
-  pcre16_dfa_exec.c \
-  pcre16_exec.c \
-  pcre16_fullinfo.c \
-  pcre16_get.c \
-  pcre16_globals.c \
-  pcre16_jit_compile.c \
-  pcre16_maketables.c \
-  pcre16_newline.c \
-  pcre16_ord2utf16.c \
-  pcre16_refcount.c \
-  pcre16_string_utils.c \
-  pcre16_study.c \
-  pcre16_tables.c \
-  pcre16_ucd.c \
-  pcre16_utf16_utils.c \
-  pcre16_valid_utf16.c \
-  pcre16_version.c \
-  pcre16_xclass.c
+#libpcre16_la_SOURCES = \
+#  pcre16_byte_order.c \
+#  pcre16_chartables.c \
+#  pcre16_compile.c \
+#  pcre16_config.c \
+#  pcre16_dfa_exec.c \
+#  pcre16_exec.c \
+#  pcre16_fullinfo.c \
+#  pcre16_get.c \
+#  pcre16_globals.c \
+#  pcre16_jit_compile.c \
+#  pcre16_maketables.c \
+#  pcre16_newline.c \
+#  pcre16_ord2utf16.c \
+#  pcre16_refcount.c \
+#  pcre16_string_utils.c \
+#  pcre16_study.c \
+#  pcre16_tables.c \
+#  pcre16_ucd.c \
+#  pcre16_utf16_utils.c \
+#  pcre16_valid_utf16.c \
+#  pcre16_version.c \
+#  pcre16_xclass.c
 
-libpcre16_la_CFLAGS = $(VISIBILITY_CFLAGS) \
-	$(AM_CFLAGS) $(am__append_8) \
-	$(am__append_11)
-libpcre16_la_LIBADD = 
-nodist_libpcre16_la_SOURCES = \
-  pcre_chartables.c
+#libpcre16_la_CFLAGS = $(VISIBILITY_CFLAGS) \
+#	$(AM_CFLAGS) $(am__append_8) \
+#	$(am__append_11)
+#libpcre16_la_LIBADD = 
+#nodist_libpcre16_la_SOURCES = \
+#  pcre_chartables.c
 
-libpcre32_la_SOURCES = \
-  pcre32_byte_order.c \
-  pcre32_chartables.c \
-  pcre32_compile.c \
-  pcre32_config.c \
-  pcre32_dfa_exec.c \
-  pcre32_exec.c \
-  pcre32_fullinfo.c \
-  pcre32_get.c \
-  pcre32_globals.c \
-  pcre32_jit_compile.c \
-  pcre32_maketables.c \
-  pcre32_newline.c \
-  pcre32_ord2utf32.c \
-  pcre32_refcount.c \
-  pcre32_string_utils.c \
-  pcre32_study.c \
-  pcre32_tables.c \
-  pcre32_ucd.c \
-  pcre32_utf32_utils.c \
-  pcre32_valid_utf32.c \
-  pcre32_version.c \
-  pcre32_xclass.c
+#libpcre32_la_SOURCES = \
+#  pcre32_byte_order.c \
+#  pcre32_chartables.c \
+#  pcre32_compile.c \
+#  pcre32_config.c \
+#  pcre32_dfa_exec.c \
+#  pcre32_exec.c \
+#  pcre32_fullinfo.c \
+#  pcre32_get.c \
+#  pcre32_globals.c \
+#  pcre32_jit_compile.c \
+#  pcre32_maketables.c \
+#  pcre32_newline.c \
+#  pcre32_ord2utf32.c \
+#  pcre32_refcount.c \
+#  pcre32_string_utils.c \
+#  pcre32_study.c \
+#  pcre32_tables.c \
+#  pcre32_ucd.c \
+#  pcre32_utf32_utils.c \
+#  pcre32_valid_utf32.c \
+#  pcre32_version.c \
+#  pcre32_xclass.c
 
-libpcre32_la_CFLAGS = $(VISIBILITY_CFLAGS) \
-	$(AM_CFLAGS) $(am__append_9) \
-	$(am__append_12)
-libpcre32_la_LIBADD = 
-nodist_libpcre32_la_SOURCES = \
-  pcre_chartables.c
+#libpcre32_la_CFLAGS = $(VISIBILITY_CFLAGS) \
+#	$(AM_CFLAGS) $(am__append_9) \
+#	$(am__append_12)
+#libpcre32_la_LIBADD = 
+#nodist_libpcre32_la_SOURCES = \
+#  pcre_chartables.c
 
 libpcre_la_LDFLAGS = $(EXTRA_LIBPCRE_LDFLAGS)
-libpcre16_la_LDFLAGS = $(EXTRA_LIBPCRE16_LDFLAGS)
-libpcre32_la_LDFLAGS = $(EXTRA_LIBPCRE32_LDFLAGS)
+#libpcre16_la_LDFLAGS = $(EXTRA_LIBPCRE16_LDFLAGS)
+#libpcre32_la_LDFLAGS = $(EXTRA_LIBPCRE32_LDFLAGS)
 #pcre_jit_test_SOURCES = pcre_jit_test.c
 #pcre_jit_test_CFLAGS = $(AM_CFLAGS) $(am__append_18)
 #pcre_jit_test_LDADD = $(am__append_15) $(am__append_16) \

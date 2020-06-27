@@ -1,10 +1,10 @@
 </$objtype/mkfile
 LIB=libpcre.a
 
-OFILES=  pcre_byte_order.$O pcre_compile.$O \
+OFILES=  pcre_byte_order.$O pcre_compile.$O pcre_chartables.$O \
 	pcre_config.$O pcre_dfa_exec.$O pcre_exec.$O pcre_fullinfo.$O \
 	pcre_get.$O pcre_globals.$O pcre_jit_compile.$O \
-	pcre_maketables.$O pcre_newline.$O pcre_ord2utf8.$O \
+	pcre_maketables.$O pcre_newline.$O pcre_ord2utf8.$O pcre_printint.$O \
 	pcre_refcount.$O pcre_string_utils.$O pcre_study.$O pcre_tables.$O \
 	pcre_ucd.$O pcre_valid_utf8.$O pcre_version.$O pcre_xclass.$O
 

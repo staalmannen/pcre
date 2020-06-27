@@ -19,8 +19,8 @@ install:V:
 	for (i in $DIRS)
 		@{ cd $i; mk $target }
 	mkdir -p /$objtype/lib/ape/pkgconfig
-	cp pcre.pc  /$objtype/lib/ape/pkgconfig/
-	cp pcreposix.pc  /$objtype/lib/ape/pkgconfig/
+	cp libpcre.pc  /$objtype/lib/ape/pkgconfig/
+	cp libpcreposix.pc  /$objtype/lib/ape/pkgconfig/
 	chmod +x pcre-config
 	cp pcre-config /rc/bin/ape
 
@@ -41,7 +41,7 @@ nuke:V:
 	mk -f mkfile.pcretest $target
 	for (i in $DIRS)
 		@{ cd $i; mk $target }
-	rm -f /$objtype/lib/ape/pkgconfig/pcre.pc
-	rm -f /$objtype/lib/ape/pkgconfig/pcreposix.pc
+	rm -f /$objtype/lib/ape/pkgconfig/libpcre.pc
+	rm -f /$objtype/lib/ape/pkgconfig/libpcreposix.pc
 	rm -f /rc/bin/ape/pcre-config
 

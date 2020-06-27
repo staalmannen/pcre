@@ -311,10 +311,10 @@ sure both macros are undefined; an emulation function will then be used. */
 /* #undef SUPPORT_LIBZ */
 
 /* Define to any value to enable the 16 bit PCRE library. */
-#define SUPPORT_PCRE16 /**/
+/* #undef SUPPORT_PCRE16 */
 
 /* Define to any value to enable the 32 bit PCRE library. */
-#define SUPPORT_PCRE32 /**/
+/* #undef SUPPORT_PCRE32 */
 
 /* Define to any value to enable the 8 bit PCRE library. */
 #define SUPPORT_PCRE8 /**/
@@ -329,7 +329,7 @@ sure both macros are undefined; an emulation function will then be used. */
    This will work even in an EBCDIC environment, but it is incompatible with
    the EBCDIC macro. That is, PCRE can support *either* EBCDIC code *or*
    ASCII/UTF-8/16/32, but not both at once. */
-#define SUPPORT_UTF /**/
+/* #undef SUPPORT_UTF */
 
 /* Define to any value for valgrind support to find invalid memory reads. */
 /* #undef SUPPORT_VALGRIND */
