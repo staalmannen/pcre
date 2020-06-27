@@ -5,7 +5,7 @@
 #
 # Copyright (C) 1992-1996, 1998-2012 Free Software Foundation, Inc.
 #
-#
+# ls - cp -
 # This configure script is free software; the Free Software Foundation
 # gives unlimited permission to copy, distribute and modify it.
 ## -------------------- ##
@@ -531,16 +531,16 @@ if (echo >conf$$.file) 2>/dev/null; then
     # ... but there are two gotchas:
     # 1) On MSYS, both `ln -s file dir' and `ln file dir' fail.
     # 2) DJGPP < 2.04 has no symlinks; `ln -s' creates a wrapper executable.
-    # In both cases, we have to default to `cp -pR'.
+    # In both cases, we have to default to `cp'.
     ln -s conf$$.file conf$$.dir 2>/dev/null && test ! -f conf$$.exe ||
-      as_ln_s='cp -pR'
+      as_ln_s='cp'
   elif ln conf$$.file conf$$ 2>/dev/null; then
     as_ln_s=ln
   else
-    as_ln_s='cp -pR'
+    as_ln_s='cp'
   fi
 else
-  as_ln_s='cp -pR'
+  as_ln_s='cp'
 fi
 rm -f conf$$ conf$$.exe conf$$.dir/conf$$.file conf$$.file
 rmdir conf$$.dir 2>/dev/null
@@ -1345,8 +1345,8 @@ test "$silent" = yes && exec 6>/dev/null
 
 
 ac_pwd=`pwd` && test -n "$ac_pwd" &&
-ac_ls_di=`ls -di .` &&
-ac_pwd_ls_di=`cd "$ac_pwd" && ls -di .` ||
+ac_ls_di=`ls -d .` &&
+ac_pwd_ls_di=`cd "$ac_pwd" && ls -d .` ||
   as_fn_error $? "working directory cannot be determined"
 test "X$ac_ls_di" = "X$ac_pwd_ls_di" ||
   as_fn_error $? "pwd does not report name of working directory"
