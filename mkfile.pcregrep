@@ -1,7 +1,7 @@
 </$objtype/mkfile
 TARG=pcregrep
 OFILES=pcregrep.$O 
-LIB=./libpcre.a8 ./libpcreposix.a8 
+LIB=./libpcre.a ./libpcreposix.a 
 BIN=/$objtype/bin
 HFILES=pcre.h config.h 
 
@@ -13,4 +13,4 @@ CFLAGS=-c -I. -D_POSIX_SOURCE -D_SUSV2_SOURCE -D_RESEARCH_SOURCE -D_REENTRANT_SO
 	-D_BSD_EXTENSION -D_NET_EXTENSION -D_LIMITS_EXTENSION -D_C99_SNPRINTF_EXTENSION \
 	-D_REGEXP_EXTENSION -DHAVE_SOCK_OPTS -DHAVE_CONFIG_H 
 
-pcregrep.$O: 
+pcregrep.$O: $LIB
